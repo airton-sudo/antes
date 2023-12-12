@@ -12,11 +12,11 @@ export default async function ListDoll() {
     const { rows } = await sql`SELECT * from doll`;
     return (
         <div>
-            <h1 className="text-center text-black">Lista de Carros</h1>
+            <h1 className="text-center text-black">Lista de bonecas</h1>
 
             <table>
                 <thead>
-                    <tr> <td>Modelo do carro</td> <td>Cor do carro</td></tr>
+                    <tr> <td>Nome da boneca</td> <td>Cor do cabelo</td></tr>
                 </thead>
                 <tbody>
                     {
